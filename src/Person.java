@@ -17,7 +17,7 @@ public class Person {
         name = "";
         weight = 140;
     }
-    // Protected members are accessible within the same package
+    // Protected members are accessible within the same package - java files under same directory/folder
     protected Person(double height, int age) {
         // Parameters are local variables  to the constructor
         this.height = height;
@@ -31,6 +31,15 @@ public class Person {
         this.color = color;
         this.name = name;
         this.weight = weight;
+
+    }
+    // Setter and Getter
+    // Methods
+
+    //Return type: Person
+    public Person Call_Private(){
+        Person p3 = new Person(72, 70, "Black", "Barack Obama", 170);
+        return p3;
 
     }
 }
