@@ -5,8 +5,9 @@ public class Person {
     String color;
     String name;
     double weight;
+    // Constructors can have private, protected, public access modifiers
 
-    Person(){
+    public Person(){
     //  Default constructor can be empty
         height = 48;
         age = 18;
@@ -14,8 +15,13 @@ public class Person {
         name = "";
         weight = 140;
     }
+    protected Person(double height, int age) {
+        // Parameters are local variables  to the constructor
+        this.height = height;
+        this.age = age;
+    }
     // Overloaded constructor
-    Person(double height, int age, String color, String name, double weight) {
+    private Person(double height, int age, String color, String name, double weight) {
         // Parameters are local variables  to the constructor
         this.height = height;
         this.age = age;
