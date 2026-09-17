@@ -5,6 +5,8 @@ public class Person {
     String color;
     String name;
     double weight;
+
+
     // Constructors can have private, protected, public access modifiers
 
     public Person(){
@@ -15,6 +17,7 @@ public class Person {
         name = "";
         weight = 140;
     }
+    // Protected members are accessible within the same package
     protected Person(double height, int age) {
         // Parameters are local variables  to the constructor
         this.height = height;
